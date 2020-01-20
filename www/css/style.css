@@ -5,9 +5,9 @@ input {
 	outline:none;
 }
 #main{
-	height: 150.9mm;
-	width: 75.7mm;
-	border-style: solid;
+	/*height: 150.9mm;*/
+	/*width: 75.7mm;*/
+	/*border-style: solid;*/
 	background-color: #F5F5DC;
 	text-align: left;
 }
