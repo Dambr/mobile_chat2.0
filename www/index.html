@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ВХОД</title>
+	<!-- <link rel="stylesheet" type="text/css" href="/public/login/css/style.css"> -->
+	<style type="text/css">
+		*{
+			font-family: 'Fira Sans', sans-serif;
+		}
+		input {
+			outline:none;
+		}
+		#main{
+			height: 150.9mm;
+			width: 75.7mm;
+			border-style: solid;
+			background-color: #F5F5DC;
+			text-align: left;
+		}
+		#title{
+			margin-top: 10%;
+			margin-bottom: 10%;
+			text-align: center;
+			font-size: 40pt;
+			color: #808080;
+		}
+		#imgPassworVisible{
+			width: 10mm;
+			height: 10mm;
+		}
+		#login, #password, #submit, #restore, #registration{
+			width: 50mm;
+			height: 10mm;
+			font-size: 8mm;
+			margin-left: 10mm;
+			margin-bottom: 5mm;
+			border-radius: 5mm;
+			border-style: groove;
+			padding: 2mm;
+		}
+		#submit, #restore, #registration{
+			font-size: 4mm;
+			width: auto;
+			border-style: none;
+			margin: 0;
+			margin-bottom: 5mm;
+			/*margin-left: 6mm;*/
+		}
+		#registration{
+			margin: 0;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<center>
+	<div id="main">
+		<div id="title">ВХОД</div>
+		<form action="/main" method="post">
+			<input type="text" name="login" id="login" placeholder="LOGIN" autocomplete="off"><br>
+			<input type="password" name="password" autocomplete="off" id="password" placeholder="PASSWORD">
+			<img src="images/passwordVisible.png" onclick="passwordVisible()" id="imgPasswordVisible" width="0" height="0"><br>
+			<center>
+				<input type="submit" name="submit" value="Вход" id="submit">
+				<button id="restore">Восстановить пароль</button><br>
+				<button id="registration">Зарегистрироваться</button>
+			</center>
+		</form>
+	</div>
+</center>
+<!-- <script type="text/javascript" src="javascript/script.js"></script> -->
+</body>
+</html>
